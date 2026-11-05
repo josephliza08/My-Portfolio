@@ -1645,7 +1645,7 @@ body:has(#lightTheme:checked) {
   outline-offset: 4px;
 }
 
-#projects:has(input[value="web"]:checked) .project-card[data-category="cpp"],#projects:has(input[value="cpp"]:checked) .project-card[data-category="web"] {
+#projects:has(input[value="web"]:checked) .project-card:not([data-category~="web"]),#projects:has(input[value="interactive"]:checked) .project-card:not([data-category~="interactive"]) {
   display: none;
 }
 
